@@ -173,7 +173,7 @@ main {
 /* LINKS */
 a.external {
   color: #fff; /* base link color */
-  text-decoration: underline; /* removes underline */
+  text-decoration: none; /* removes underline */
   transition: color 0.2s;
 }
 
@@ -188,17 +188,17 @@ a.lang-toggle {
 }
 
 a.external:hover {
-  color: var(--bright-tag-green);
-  text-decoration: underline; /* optional */
+  color: var(--accent);
+  text-decoration: none; /* optional */
 }
 
 a.external_icon:hover {
-  color: var(--bright-tag-green);
+  color: var(--accent);
   transform: translateY(-1px);
 }
 
 a.lang-toggle:hover {
-  color: var(--bright-tag-green);
+  color: var(--accent);
   transform: translateY(-1px);
   text-decoration: none;
 }
@@ -433,10 +433,17 @@ footer {
   margin-top: 100px; 
 }
 
-footer a {
+footer p a {
   color: var(--accent);
+  text-decoration: underline;
+}
+
+/* icon links: never underlined */
+.footer-links a,
+.footer-links a:hover {
   text-decoration: none;
 }
+
 
 footer a:hover {
   text-decoration: underline;
